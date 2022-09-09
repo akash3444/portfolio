@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("/fonts/Inter-Thin.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-Thin.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url("/fonts/Inter-ThinItalic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-ThinItalic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("/fonts/Inter-ExtraLight.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-ExtraLight.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url("/fonts/Inter-ExtraLightItalic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-ExtraLightItalic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/fonts/Inter-Light.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-Light.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/fonts/Inter-LightItalic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-LightItalic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/Inter-Regular.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-Regular.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/Inter-Italic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-Italic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/Inter-Medium.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-Medium.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/Inter-MediumItalic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-MediumItalic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/Inter-SemiBold.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-SemiBold.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/Inter-SemiBoldItalic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-SemiBoldItalic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/Inter-Bold.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-Bold.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/Inter-BoldItalic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-BoldItalic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/fonts/Inter-ExtraBold.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-ExtraBold.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/fonts/Inter-ExtraBoldItalic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-ExtraBoldItalic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/Inter-Black.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-Black.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/Inter-BlackItalic.woff2?v=3.19") format("woff2"),
+      url("/fonts/Inter-BlackItalic.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter var";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: "Regular";
+    src: url("/fonts/Inter-roman.var.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter var";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+    font-named-instance: "Italic";
+    src: url("/fonts/Inter-italic.var.woff2") format("woff2");
+  }
+
+  body {
+    @apply relative bg-slate-900;
+  }
+  header {
+    @apply relative overflow-hidden bg-slate-900/10;
+  }
+  header::before {
+    content: "";
+    @apply absolute top-20 right-6 h-20 w-20 bg-primary-400/90 animate-pulse-delayed rounded-full blur-md;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='660' preserveAspectRatio='none' viewBox='0 0 1440 660'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1540%26quot%3b)' fill='none'%3e%3ccircle r='61.225' cx='98.11' cy='52.8' fill='url(%23SvgjsLinearGradient1541)'%3e%3c/circle%3e%3ccircle r='25.37' cx='368.68' cy='473.88' fill='url(%23SvgjsLinearGradient1542)'%3e%3c/circle%3e%3ccircle r='56.005' cx='414.54' cy='111.07' fill='url(%23SvgjsLinearGradient1543)'%3e%3c/circle%3e%3ccircle r='35.46' cx='1015.57' cy='351.67' fill='url(%23SvgjsLinearGradient1544)'%3e%3c/circle%3e%3ccircle r='61.125' cx='241.58' cy='613.98' fill='url(%23SvgjsLinearGradient1545)'%3e%3c/circle%3e%3ccircle r='59.87' cx='721.51' cy='333.57' fill='url(%23SvgjsLinearGradient1546)'%3e%3c/circle%3e%3ccircle r='46.455' cx='662.8' cy='654.03' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='39.345' cx='774.87' cy='657.43' fill='url(%23SvgjsLinearGradient1547)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1540'%3e%3crect width='1440' height='660' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='-24.340000000000003' y1='52.8' x2='220.56' y2='52.8' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1541'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='317.94' y1='473.88' x2='419.42' y2='473.88' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1542'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='302.53000000000003' y1='111.07' x2='526.5500000000001' y2='111.07' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1543'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='944.6500000000001' y1='351.67' x2='1086.49' y2='351.67' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1544'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='119.33000000000001' y1='613.98' x2='363.83000000000004' y2='613.98' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1545'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='601.77' y1='333.57' x2='841.25' y2='333.57' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1546'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='696.1800000000001' y1='657.4300000000001' x2='853.5600000000001' y2='657.4300000000001' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1547'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"); */
+    z-index: -1;
+  }
+  header::after {
+    content: "";
+    @apply absolute top-[70%] left-20 h-10 w-10 bg-cyan-400/70 rounded-full blur-md;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='660' preserveAspectRatio='none' viewBox='0 0 1440 660'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1540%26quot%3b)' fill='none'%3e%3ccircle r='61.225' cx='98.11' cy='52.8' fill='url(%23SvgjsLinearGradient1541)'%3e%3c/circle%3e%3ccircle r='25.37' cx='368.68' cy='473.88' fill='url(%23SvgjsLinearGradient1542)'%3e%3c/circle%3e%3ccircle r='56.005' cx='414.54' cy='111.07' fill='url(%23SvgjsLinearGradient1543)'%3e%3c/circle%3e%3ccircle r='35.46' cx='1015.57' cy='351.67' fill='url(%23SvgjsLinearGradient1544)'%3e%3c/circle%3e%3ccircle r='61.125' cx='241.58' cy='613.98' fill='url(%23SvgjsLinearGradient1545)'%3e%3c/circle%3e%3ccircle r='59.87' cx='721.51' cy='333.57' fill='url(%23SvgjsLinearGradient1546)'%3e%3c/circle%3e%3ccircle r='46.455' cx='662.8' cy='654.03' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='39.345' cx='774.87' cy='657.43' fill='url(%23SvgjsLinearGradient1547)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1540'%3e%3crect width='1440' height='660' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='-24.340000000000003' y1='52.8' x2='220.56' y2='52.8' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1541'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='317.94' y1='473.88' x2='419.42' y2='473.88' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1542'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='302.53000000000003' y1='111.07' x2='526.5500000000001' y2='111.07' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1543'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='944.6500000000001' y1='351.67' x2='1086.49' y2='351.67' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1544'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='119.33000000000001' y1='613.98' x2='363.83000000000004' y2='613.98' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1545'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='601.77' y1='333.57' x2='841.25' y2='333.57' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1546'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='696.1800000000001' y1='657.4300000000001' x2='853.5600000000001' y2='657.4300000000001' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1547'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"); */
+    z-index: -1;
+  }
+  main {
+    @apply relative overflow-hidden bg-slate-900/10;
+  }
+  main::before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1064%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(15%2c 23%2c 42%2c 1)'%3e%3c/rect%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1064'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    @apply absolute h-full w-full bg-no-repeat blur-md;
+    z-index: -1;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply relative;
+  }
+  .logo::after {
+    content: "";
+    @apply absolute top-full left-0 h-[2px] w-full origin-right scale-x-75 bg-primary-500;
+  }
+  .logo::before {
+    content: "";
+    @apply absolute top-full left-1.5 h-1 w-1 rounded-full bg-primary-500;
+  }
+  /* .logo::before {
+    content: "";
+    @apply absolute bottom-full left-0 h-[2px] w-full bg-cyan-500 scale-x-75 origin-left;
+  } */
+  .section-heading {
+    /* @apply underline-primary text-center text-3xl font-semibold text-slate-200 underline underline-offset-8; */
+    @apply relative mx-auto max-w-max text-center font-inter text-3xl font-semibold text-slate-200 tracking-tight;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs'  preserveAspectRatio='none' viewBox='0 0 1440 100'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1039%26quot%3b)' fill='none'%3e%3cpath d='M -125.03225539408851%2c6 C -110.63%2c23.4 -81.83%2c89 -53.03225539408851%2c93 C -24.23%2c97 -9.83%2c24.8 18.96774460591149%2c26 C 47.77%2c27.2 62.17%2c100.6 90.96774460591149%2c99 C 119.77%2c97.4 134.17%2c25 162.9677446059115%2c18 C 191.77%2c11 206.17%2c62.6 234.9677446059115%2c64 C 263.77%2c65.4 278.17%2c21.2 306.9677446059115%2c25 C 335.77%2c28.8 350.17%2c78.4 378.9677446059115%2c83 C 407.77%2c87.6 422.17%2c54.4 450.9677446059115%2c48 C 479.77%2c41.6 494.17%2c59.2 522.9677446059115%2c51 C 551.77%2c42.8 566.17%2c-1 594.9677446059115%2c7 C 623.77%2c15 638.17%2c86.8 666.9677446059115%2c91 C 695.77%2c95.2 710.17%2c31.6 738.9677446059115%2c28 C 767.77%2c24.4 782.17%2c70.4 810.9677446059115%2c73 C 839.77%2c75.6 854.17%2c44 882.9677446059115%2c41 C 911.77%2c38 926.17%2c58 954.9677446059115%2c58 C 983.77%2c58 998.17%2c35.8 1026.9677446059115%2c41 C 1055.77%2c46.2 1070.17%2c83 1098.9677446059115%2c84 C 1127.77%2c85 1142.17%2c52 1170.9677446059115%2c46 C 1199.77%2c40 1214.17%2c53.4 1242.9677446059115%2c54 C 1271.77%2c54.6 1286.17%2c48.4 1314.9677446059115%2c49 C 1343.77%2c49.6 1361.96%2c57.6 1386.9677446059115%2c57 C 1411.97%2c56.4 1429.39%2c48.2 1440%2c46' stroke='rgba(244%2c 63%2c 94%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1039'%3e%3crect width='1440' height='100' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); */
+  }
+  .section-heading::before {
+    content: "";
+    @apply absolute top-[calc(100%+3px)] left-0 h-[2px] w-full bg-primary-500;
+  }
+  .projects {
+    column-count: 3;
+    column-width: 18rem;
+    column-gap: 2rem;
+  }
+  .projects > * {
+    margin-bottom: 2rem;
+    break-inside: avoid;
+  }
+}
+
+@layer utilities {
+  .underline-primary {
+    text-decoration-color: theme(colors.primary.600);
+  }
+  .animated-underline {
+    @apply relative;
+  }
+  .animated-underline::before {
+    content: "";
+    @apply absolute top-full inset-x-0 transition-transform duration-200 origin-right h-[2px] scale-x-0 w-full bg-primary-500;
+  }
+  .animated-underline:hover::before {
+    content: "";
+    @apply scale-x-100 origin-left;
+  }
+}
