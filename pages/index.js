@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import ProjectList from "../components/ProjectList";
@@ -6,6 +7,9 @@ import Skills from "../components/Skills";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Akash Moradiya</title>
+      </Head>
       <header className="background">
         <Navbar />
         <Hero />

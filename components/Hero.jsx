@@ -9,14 +9,17 @@ const socialMediaIcons = [
   {
     icon: FaGithub,
     link: "https://github.com/Akash3444",
+    "aria-label": "View my Github profile",
   },
   {
     icon: FaLinkedinIn,
     link: "https://www.linkedin.com/in/akash-3444/",
+    "aria-label": "View my LinkedIn profile",
   },
   {
     icon: SiUpwork,
     link: "https://www.upwork.com/freelancers/~018f16af62f6d209b4",
+    "aria-label": "View my UpWork profile",
   },
 ];
 
@@ -42,13 +45,19 @@ const Hero = () => {
         ))}
       </div>
       <a href="#skills">
-        <button className="mt-8 rounded-lg bg-primary-600 py-2 px-6 text-sm text-white transition hover:scale-105 hover:bg-primary-700 focus:bg-primary-700 focus:outline-dotted focus:outline-[3px] focus:outline-offset-4 focus:outline-slate-300">
+        <button
+          aria-label="Explore"
+          className="mt-8 rounded-lg bg-primary-600 py-2 px-6 text-sm text-white transition hover:scale-105 hover:bg-primary-700 focus:bg-primary-700 focus:outline-dotted focus:outline-[3px] focus:outline-offset-4 focus:outline-slate-300"
+        >
           Explore
         </button>
       </a>
 
       <a href="#skills">
-        <button className="mx-auto mt-10 block animate-bounce">
+        <button
+          aria-label="Skills"
+          className="mx-auto mt-10 block animate-bounce"
+        >
           <HiOutlineArrowNarrowDown size={45} className="text-slate-400" />
         </button>
       </a>

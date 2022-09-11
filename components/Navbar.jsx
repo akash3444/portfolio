@@ -61,7 +61,11 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button className="md:hidden" onClick={toggleMenu}>
+        <button
+          aria-label="Hamburger"
+          className="md:hidden"
+          onClick={toggleMenu}
+        >
           <MenuIcon size={25} className="text-white" />
         </button>
       </div>
