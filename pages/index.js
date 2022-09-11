@@ -9,6 +9,17 @@ export default function Home() {
     <>
       <Head>
         <title>Akash Moradiya</title>
+        <meta
+          content="Portfolio of Akash Moradiya, an experienced React.js developer"
+          name="description"
+        ></meta>
+        <meta
+          content="Akash Moradiya, Akash3444, React Developer, Front-end developer, Akash, Portfolio"
+          name="keywords"
+        ></meta>
+        <meta content="https://akash3444.vercel.app" property="og:url"></meta>
+        <meta content="Akash Moradiya" property="og:title"></meta>
+        <link rel="canonical" href="https://akash3444.vercel.app"></link>
       </Head>
       <header className="background">
         <Navbar />
