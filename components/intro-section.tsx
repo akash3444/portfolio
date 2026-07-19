@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Mail } from "lucide-react"
 
 import { GitHub, X } from "@/components/icons"
 import { Button } from "@/components/ui/button"
@@ -59,6 +60,23 @@ export function IntroSection() {
                   className="border border-border/70 text-muted-foreground hover:text-foreground"
                 >
                   <GitHub aria-hidden="true" className="size-4.75" />
+                </Button>
+              </li>
+              <li>
+                <Button
+                  render={
+                    <a
+                      href="mailto:akashmoradiya3444@gmail.com"
+                      title="Email"
+                    />
+                  }
+                  nativeButton={false}
+                  variant="secondary"
+                  size="icon"
+                  aria-label="Email"
+                  className="border border-border/70 text-muted-foreground hover:text-foreground"
+                >
+                  <Mail aria-hidden="true" />
                 </Button>
               </li>
             </ul>

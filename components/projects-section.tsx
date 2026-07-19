@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react"
+
 const projects = [
   {
     name: "Shadcn UI Blocks",
@@ -43,9 +45,13 @@ export function ProjectsSection() {
                   href={project.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="underline decoration-dotted decoration-foreground/25 underline-offset-5 transition-colors hover:decoration-foreground"
+                  className="group inline-flex items-center gap-1 underline decoration-foreground/25 decoration-dotted underline-offset-5 hover:decoration-foreground"
                 >
                   {project.name}
+                  <ArrowUpRight
+                    aria-hidden="true"
+                    className="invisible size-4 shrink-0 opacity-0 transition-[opacity,translate] group-hover:visible group-hover:opacity-100 group-focus-visible:visible group-focus-visible:opacity-100 motion-reduce:transition-none"
+                  />
                 </a>
               </h3>
               <p className="text-base/7 text-pretty text-muted-foreground">
