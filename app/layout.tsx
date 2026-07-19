@@ -14,7 +14,17 @@ const title = "Akash Moradiya"
 const description =
   "Portfolio of Akash Moradiya, a frontend engineer building polished interfaces and complex product features with a focus on performance."
 
+const ogImage = {
+  url: "/og.png",
+  width: 1200,
+  height: 630,
+  alt: title,
+}
+
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://akashmoradiya.com"
+  ),
   title,
   description,
   authors: [{ name: "Akash Moradiya" }],
@@ -25,12 +35,14 @@ export const metadata: Metadata = {
     title,
     description,
     siteName: "Akash Moradiya",
+    images: [ogImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     creator: "@akash_3444",
     title,
     description,
+    images: [ogImage],
   },
 }
 
