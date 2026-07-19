@@ -10,10 +10,28 @@ const geist = Geist({
   variable: "--font-sans",
 })
 
+const title = "Akash Moradiya"
+const description =
+  "Portfolio of Akash Moradiya, a frontend engineer building polished interfaces and complex product features with a focus on performance."
+
 export const metadata: Metadata = {
-  title: "Akash Moradiya — Design Engineer",
-  description:
-    "Portfolio of Akash Moradiya, a Design Engineer focused on thoughtful products for the web.",
+  title,
+  description,
+  authors: [{ name: "Akash Moradiya" }],
+  creator: "Akash Moradiya",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    title,
+    description,
+    siteName: "Akash Moradiya",
+  },
+  twitter: {
+    card: "summary",
+    creator: "@akash_3444",
+    title,
+    description,
+  },
 }
 
 export default function RootLayout({
